@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,500,500i,600,600i,700,700i|Open+Sans:400,400i,600,700&display=swap");
 /*
-Template Name: Mosto - Software and App Landing Pages HTML Template
-Template URI: http://pixner.net/mosto/
-Author: pixelaxis
-Author URI: https://themeforest.net/user/pixelaxis
-Description: Mosto - Software and App Landing Pages HTML Template. Mosto is a Pixel-Perfect Powerful,
-Mordern  Software and App Landing Pages HTML Template for all types of landing pages.
-Version: 4.0.1
+
 Text Domain: 
 */
 /*
@@ -960,6 +954,23 @@ input[type="submit"] {
     font-weight: 700;
     padding: 0;
 }
+/*
+@-webkit-keyframes ss {
+    body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        height: 100vh;
+        background: black;
+    }
+    canvas {
+        margin: auto;
+        touch-action: none;
+!*    // outline: 1px solid black;
+    // box-shadow: 0 0 20px rgba(0,0,0,0.1);*!
+    }
+}*/
+
 
 .bg_img {
     background-size: cover;
@@ -1056,6 +1067,9 @@ input[type="submit"] {
         padding-bottom: 50px;
     }
 }
+
+
+
 
 @media (min-width: 992px) {
     .padding-top {
@@ -1390,9 +1404,16 @@ input[type="submit"] {
     max-width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 375px) {
+    .apps-download-buttons-20 {
+        height: 185px;
+    }
+
+
+}
+    @media (min-width: 768px) {
     .section-header {
-        margin-bottom: 60px;
+        margin-bottom: 200px;
     }
 
     .section-header .thumb {
@@ -1498,7 +1519,7 @@ input[type="submit"] {
 }
 
 .mt-120 {
-    margin-top: 120px;
+    margin-top: 0px;
 }
 
 .mb-120 {
@@ -1603,7 +1624,7 @@ input[type="submit"] {
 }
 
 .footer-top .logo {
-    max-width: 50px;
+    max-width: 210px;
     margin: 0 auto 30px;
 }
 
@@ -2421,7 +2442,7 @@ input[type="submit"] {
 }
 
 .header-section .header-wrapper .logo {
-    width: 50px;
+    width: 150px;
 }
 
 .header-section .header-wrapper .logo a {
@@ -2661,13 +2682,13 @@ input[type="submit"] {
 }
 
 .header-section.active {
-    background: #3b319e;
+    background: #181a31;
     top: 0;
 }
 
 @media (max-width: 991px) {
     .header-section.active {
-        background: #3b319e;
+        background: #181a31;
     }
 }
 
@@ -16844,6 +16865,8 @@ div[class*="col"]:nth-child(even) .team-item:hover .team-thumb::before {
     opacity: 1;
 }
 
+
+
 .video-tour-item {
     align-items: center;
     padding: 13px;
@@ -17063,7 +17086,9 @@ div[class*="col"]:nth-child(even) .team-item:hover .team-thumb::before {
 
 .apps-download-screen-20 {
     position: relative;
-    margin-top: -380px;
+    margin-top: -525px;
+    display: flex;
+    justify-content: center;
 }
 
 .apps-download-screen-20 img {
@@ -17104,6 +17129,10 @@ div[class*="col"]:nth-child(even) .team-item:hover .team-thumb::before {
 
 .apps-download-bg {
     animation: rotate3 6s alternate infinite;
+    width: 700px;
+    /*height: 700px;*/
+
+
 }
 
 @keyframes rotate3 {
@@ -17122,8 +17151,10 @@ div[class*="col"]:nth-child(even) .team-item:hover .team-thumb::before {
 
 .apps-download-buttons-20 {
     position: relative;
-    z-index: 9;
-    margin-top: 150px;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .apps-download-buttons-20 .download-options {
